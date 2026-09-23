@@ -1,3 +1,5 @@
+**My submission: [STUDENT_README.md](STUDENT_README.md)**
+
 # Building a Custom LLM with nanoGPT
 
 Class 4, Fall 26 · From Zero to AI Agents
