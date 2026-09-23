@@ -1,11 +1,7 @@
 # My Custom LLM Experiment
 
-Replace the prompts below with your choices, actual outputs, and explanations.
-
-Grading uses deliverable quality **4 points**, testing & evaluation **3 points**,
-and working result **3 points**. Your model's eval percentage is not your grade.
-Complete, valid eval evidence and a reasoned comparison matter; no minimum pass
-rate or numerical improvement is required. Missing evidence earns less credit.
+Paola Negrin
+Sept 2026
 
 ## My choices and prediction
 
