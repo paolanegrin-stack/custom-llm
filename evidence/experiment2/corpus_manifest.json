@@ -1,0 +1,33 @@
+{
+  "files": [
+    {
+      "file": "corpusnegation.txt.txt",
+      "bytes": 841,
+      "sha256": "e971247195eafff2c36ff2e16980f58658bb23f67483e4df7467367217c0cd46",
+      "warnings": [],
+      "characters": 841,
+      "passages": 40,
+      "unique_passages": 39,
+      "preview": "the shirt is not red . it is blue .\r\nthe car is not green . it is yellow .\r\nthe cup is not full . it is empty .\r\nthe door is not closed . it is open .\r\nthe bag is not small . it is wide .\r\nnoor did not buy rice . she bought bread .\r\ntom did not buy milk . he bought tea .\r\nzoe did not eat bread . she"
+    },
+    {
+      "file": "corpusopposites.txt.txt",
+      "bytes": 696,
+      "sha256": "5de0c0a480a0cecedb1235496728425457df6231f55503d80e299d06d34effe3",
+      "warnings": [],
+      "characters": 696,
+      "passages": 18,
+      "unique_passages": 18,
+      "preview": "hot is the opposite of cold .\r\nempty is the opposite of full .\r\nnoisy is the opposite of quiet .\r\nthe coffee was hot , now it is cold .\r\nthe soup was cold , now it is warm .\r\nthe runner was fast , now she is slow .\r\nthe bag was heavy , now it is light .\r\nthe room was noisy , now it is quiet .\r\nthe c"
+    }
+  ],
+  "ignored": [],
+  "external_passages": 58,
+  "mode": "classroom",
+  "base_passages": 6200,
+  "unique_passages": 4649,
+  "new_unique_passages": 57,
+  "duplicates_removed": 1609,
+  "max_passage_tokens": 47,
+  "split_unit": "deduplicated passage, not source file"
+}

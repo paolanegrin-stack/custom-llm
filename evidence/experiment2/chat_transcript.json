@@ -1,0 +1,44 @@
+{
+  "model_sha256": "8656c68e65c6826c73ee3943b2f4862af1749a46c932f59ab3a87272c8a2bdb4",
+  "completed_steps": 3000,
+  "fresh_context_per_prompt": true,
+  "temperature": 0.8,
+  "max_tokens": 24,
+  "turns": [
+    {
+      "prompt": "the customer",
+      "seed": 2026,
+      "response": "reviewed the item after checking the price .",
+      "unknown_prompt_words": [],
+      "prompt_truncated": false
+    },
+    {
+      "prompt": "the box is not",
+      "seed": 2027,
+      "response": "open .",
+      "unknown_prompt_words": [],
+      "prompt_truncated": false
+    },
+    {
+      "prompt": "the coffee was",
+      "seed": 2028,
+      "response": "learning , now it is discussed the hospital .",
+      "unknown_prompt_words": [],
+      "prompt_truncated": false
+    },
+    {
+      "prompt": "the report about the surgeon explains the",
+      "seed": 2029,
+      "response": "health in detail .",
+      "unknown_prompt_words": [],
+      "prompt_truncated": false
+    },
+    {
+      "prompt": "the customer reviewed the",
+      "seed": 2030,
+      "response": "brand after checking the price .",
+      "unknown_prompt_words": [],
+      "prompt_truncated": false
+    }
+  ]
+}
