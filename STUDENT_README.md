@@ -93,6 +93,13 @@ Full data: [tokenization.json experiment 1](evidence/experiment1/tokenization.js
 
 Both experiments learned the same kind of pattern for "customer": before training the top prediction is barely above random guessing, after training it clearly favors verbs describing what a customer does (reviewed, ordered, selected, compared). The exact numbers differ slightly between experiments because the training data and random batches were not identical, but the pattern learned is the same.
 
+### Nearest neighbors (embedding viewer)
+
+Before training, "customer" has no meaningful neighbors, just random words like bus, educator, and helped, with low similarity scores (around 0.20). After training, its 3 closest neighbors become client, buyer, and shopper, all real business roles related to "customer", confirming the prediction made before training.
+
+![Before training](evidence/embedding_viewer/before%20training.png)
+![After training](evidence/embedding_viewer/after%20training.png)
+
 ### Temperature comparison
 
 Full data: [temperature_comparison.json experiment 1](evidence/experiment1/temperature_comparison.json), [temperature_comparison.json experiment 2](evidence/experiment2/temperature_comparison.json)
@@ -146,20 +153,23 @@ Full transcript: [chat_transcript.json](evidence/experiment2/chat_transcript.jso
 **Interaction 1**
 You: the coffee was
 Model: learning , now it is discussed the hospital .
+![the coffee was](evidence/experiment2/chat_screenshots/the%20coffee%20was.png)
 
 This is a clear limitation. "Coffee" only appears in a few sentences in opposites.txt, so the model has very little data to learn what usually follows it. The output mixes fragments from stronger, more repeated patterns instead of forming a real sentence about coffee.
 
 **Interaction 2**
 You: the customer reviewed the
 Model: brand after checking the price .
+![the customer reviewed the](evidence/experiment2/chat_screenshots/the%20customer%20reviewed%20the.png)
 
 This uses vocabulary from the original, heavily repeated classroom corpus, and the result is coherent and grammatical.
 
 **Interaction 3**
-You: the report about the surgeon explains the
-Model: health in detail .
+You: the box is not
+Model: open .
+![the box is not open](evidence/experiment2/chat_screenshots/the%20box%20is%20not%20open.png)
 
-Another coherent result, again using well repeated starter vocabulary.
+This uses the negation.txt pattern added in experiment 2, and the model correctly continues it with a sensible opposite word, even outside the multiple-choice eval format.
 
 The model only continues text, it does not answer questions. It knows only the 215 words in its vocabulary; any other word becomes <UNK>. It can only see the last 48 tokens of context, so longer prompts get cut to their most recent part.
 
